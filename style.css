@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #001a00;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 0;
+}
+  
+p {
+    font-size: 16px;
+    margin: 10px 0 40px;
+}
+ 
+/* top nav bar */
+
+.top_nav_bar {
+    padding-top: 100px;
+    background-image: url('https://img.itch.zone/aW1hZ2UvMTIxNjU4LzU2MDM4MS5wbmc=/original/N%2Fb6N3.png');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+  
+.nav_links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+  
+.nav_links a {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 17.6px;
+}
+
+.nav_links a:hover {
+    background-color: white;
+    color: #001a00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+} 
+  
+.search_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+  
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    width: 250px;
+    border-radius: 4px;
+    border: none;
+}
+  
+button {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    border-radius: 4px;
+}
+  
+.icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+  
+.icons img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* profile picture */
+
+.image_container img {
+    float: right;
+    width: 200px;
+    height: auto;
+    margin-right: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* side bar */
+
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+  
+.side_bar {
+    width: 220px;
+    background-color: #333;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+  
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+  
+.menu a:hover {
+    color: #85dca6;
+}
+  
+.content {
+    padding: 40px;
+    flex: 1;
+}
+  
+.content > div {
+    margin-bottom: 80px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+}
+  
+.content h2 {
+    color: #333;
+}
+
+ /* content */
+  
+.content {
+    margin-left: 0px;
+    padding: 32px;
+}
+  
+.section {
+    margin-bottom: 48px;
+    padding-left: 28px;
+}
+  
+.section h2 {
+    font-size: 28px;
+    border-bottom: 3px solid #004080;
+    color:#99ccff;
+    display: inline-block;
+    padding-bottom: 4px;
+    margin-bottom: 16px;
+}
+  
+.light-bg h2 {
+    color: #004080;
+}
+
+.light-bg {
+    background-color: #99ccff;
+    padding: 32px;
+    border-radius: 12px;
+}
+  
+.tags {
+    padding: 0px;
+}
+
+.tags span {
+    background-color: #333;
+    color: white;
+    padding: 8px 16px;
+    display: inline-block;
+    font-size: 14px;
+}
+  
+footer {
+    text-align: center;
+    padding: 32px 0;
+    font-size: 14px;
+    color: #777;
+}
+
+/* responsiveness */
+@media (max-width: 1024px) {
+    html, body {
+        scroll-behavior: smooth;
+        overflow-y: auto;
+        height: auto;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .side_bar {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    section:target {
+        scroll-margin-top: 80px;
+    }
+
+    .image_container {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .image_container img {
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    footer {
+        background-color: #222;
+        color: #fff;
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 14px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+}
+  
